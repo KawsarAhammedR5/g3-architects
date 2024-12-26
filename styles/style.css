@@ -6,6 +6,21 @@
     font-style: normal;
 }
 /* common style */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.section-heading{
+    color:#131313;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.section-description{
+    margin: 1.2em 0;
+    color:#727272;
+    font-size: 1em;
+    font-weight: 400;
+}
 .button-primary{
     padding: 1em 1.2em;
     border: 0;
@@ -25,12 +40,6 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.nav-title{
-    color: #131313;
-    text-align: center;
-    font-size: 2.8rem;
-    font-weight: 700;
 }
 nav ul{
     display: flex;
@@ -60,19 +69,13 @@ nav ul li a{
     font-size: 3.5em;
     font-weight: 700;
 }
-.banner-description{
-    margin: 1.2rem 0;
-    color: #727272;
-    font-size: 1em;
-    font-weight: 400;
-}
 .banner-image{
     margin-top: 2em;
     width: 100%;
 }
 /* quick-list-feature section style */
 .quick-list-feature{
-    margin: 4em 12em;
+    margin: 4em 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,11 +83,6 @@ nav ul li a{
 .section-content{
     margin-left: 3em;
     width: 47%;
-}
-.section-heading{
-    color:#131313;
-    font-size: 2.5em;
-    font-weight: 700;
 }
 .section-heading > small{
     color:#727272;
@@ -94,12 +92,6 @@ nav ul li a{
 .section-heading > span{
     color: #FF900E;
 }
-.section-description{
-    margin: 1.2em 0;
-    color:#727272;
-    font-size: 1em;
-    font-weight: 400;
-}
 .image-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -107,6 +99,96 @@ nav ul li a{
 }
 .image-container img{
     width: 100%;
+}
+/* features-you-will */
+.features-you-will{
+    margin: 4em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#orange-line{
+    width: 60%;
+    padding-left: 1rem;
+    border-left: 5px solid #FF900E;
+}
+.features-container{
+    width: calc((100% - 7rem)/2);
+    margin-right: 7rem;
+}
+.features{
+    margin-bottom: 1rem;
+    padding: 1.8rem 1.8rem 1rem 1.8rem;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.sub-heading{
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+}
+.features-img{
+    width: calc((100% - 8rem)/2);
+    position: relative;
+}
+#year-button{
+    padding: 30px;
+    position: absolute;
+    bottom: -50px;
+    left: -70px;
+}
+.button-primary > h2{
+    color: #FFF;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.button-primary > p{
+    color: #FFF;    
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.features-you-will div img{
+    width: 100%;
+}
+
+
+
+
+/*  some-facts style */
+.some-facts{
+    margin: 4em 0;
+}
+.some-facts-content{
+    width: 45%;
+}
+.card-container{
+    margin: 6rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 220px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.card-stats{
+    color: #424242;
+    font-size: 45px;
+    font-weight: 600;
+}
+.card-title{
+    color: #727272;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 
@@ -147,7 +229,7 @@ nav ul li a{
     header{
         padding: 50px 20px;
     }
-    .nav-title{
+    .section-heading{
         font-size: 2em;
     }
     nav ul li{
@@ -188,7 +270,7 @@ nav ul li a{
         header{
             padding: 70px 50px;
         }
-        .nav-title{
+        .section-heading{
             font-size: 2em;
         }
         nav ul li{
