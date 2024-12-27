@@ -165,6 +165,7 @@ nav ul li a{
     width: 45%;
 }
 .card-container{
+    gap: 1rem;
     margin: 6rem 2.5rem;
     display: flex;
     justify-content: space-between;
@@ -190,8 +191,32 @@ nav ul li a{
     font-size: 20px;
     font-weight: 600;
 }
-
-
+/* our-sponsors */
+.our-sponsors{
+    margin: 4em 0;
+    text-align: center;
+}
+.sponsors{
+    margin: 3rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*  footer */
+footer{
+    margin: 7rem auto;
+    max-width: 1440px;
+    border-radius: 8px;
+    background: #FFF4E7;
+}
+.all-right{
+    margin: 1rem;
+    padding: 2.5rem 0;
+    color:#424242;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
 
 
 
@@ -215,11 +240,14 @@ nav ul li a{
 /* responsive small device */
 @media screen and (max-width:576px) {
     /* common responsive */
-    nav, .quick-list-feature{
+    nav, .quick-list-feature, .features-you-will{
         flex-direction: column;
     }
-    .quick-list-feature{
+    .quick-list-feature, .features-you-will, .some-facts, .our-sponsors{
         margin: 50px 20px;
+    }
+    .features-you-will div, .some-facts-content {
+        width: 100%;
     }
     .button-primary{
         padding: .8em 1em;
@@ -230,7 +258,7 @@ nav ul li a{
         padding: 50px 20px;
     }
     .section-heading{
-        font-size: 2em;
+        font-size: 2rem;
     }
     nav ul li{
         margin-top: 1em;
@@ -248,6 +276,31 @@ nav ul li a{
     .image-container{
         gap: 1em;
     }
+    /* features-you-will */
+    .features-container{
+        margin-right: 1rem;
+    }
+    .features{
+        padding: 1rem 0 1rem 1rem;
+    }
+    #year-button{
+        padding: 10px;
+        position: absolute;
+        bottom: -50px;
+        left: 60px;
+        margin-bottom: 20px;
+    }
+    /* some-facts-content */
+    .card-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* our-sponsors */
+    .sponsors{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }
 
 
@@ -256,11 +309,14 @@ nav ul li a{
 /*  responsive medium device */
 @media screen and (min-width:576px) and (max-width:960px) {
         /* common responsive */
-        .quick-list-feature{
+        .quick-list-feature, .features-you-will{
             flex-direction: column;
         }
-        .quick-list-feature{
+        .quick-list-feature, .features-you-will, .some-facts, .our-sponsors{
             margin: 70px 60px;
+        }
+        .features-you-will div, .some-facts-content {
+            width: 100%;
         }
         .button-primary{
             padding: .8em 1em;
@@ -286,4 +342,29 @@ nav ul li a{
             margin-top: 40px;
             width: 100%;
         }
+        /* features-you-will */
+        .features-container{
+            margin-right: 1rem;
+        }
+        .features{
+            padding: 1rem 0 1rem 1rem;
+        }
+        #year-button{
+            padding: 10px;
+            position: absolute;
+            bottom: -50px;
+            left: 60px;
+            margin-bottom: 20px;
+        }
+    /* some-facts-content */
+    .card-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* our-sponsors */
+    .sponsors{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }
