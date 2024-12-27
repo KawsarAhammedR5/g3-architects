@@ -75,7 +75,7 @@ nav ul li a{
 }
 /* quick-list-feature section style */
 .quick-list-feature{
-    margin: 4em 0;
+    margin: 6rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,7 +102,7 @@ nav ul li a{
 }
 /* features-you-will */
 .features-you-will{
-    margin: 4em 0;
+    margin: 6rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,7 +159,7 @@ nav ul li a{
 
 /*  some-facts style */
 .some-facts{
-    margin: 4em 0;
+    margin: 6rem 0;
 }
 .some-facts-content{
     width: 45%;
@@ -193,7 +193,7 @@ nav ul li a{
 }
 /* our-sponsors */
 .our-sponsors{
-    margin: 4em 0;
+    margin: 6rem 0;
     text-align: center;
 }
 .sponsors{
